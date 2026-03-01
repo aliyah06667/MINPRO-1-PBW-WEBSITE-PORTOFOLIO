@@ -1,6 +1,6 @@
 # MINI PROJECT PEMOGRAMAN BERBASIS WEB (1) "PORTOFOLIO"
 
-<img width="1897" height="862" alt="image" src="https://github.com/user-attachments/assets/8b3d3543-3ca6-4e59-b93d-30365804244b" />
+<img width="1897" height="862" alt="Screenshot 2026-02-28 211144" src="https://github.com/user-attachments/assets/20ea2249-5e3d-4d6a-8b5e-4770deec39d5" />
 
 ## Dibuat Oleh
 
@@ -23,7 +23,7 @@ Website ini dibuat menggunakan beberapa teknologi berikut:
 ## 📂 Struktur Folder
 
 <p align="center">
-   <img src="https://github.com/user-attachments/assets/508edbf8-f34d-4b39-b605-f5f6bb03305f" width="200" style="border:2px solid #ddd; border-radius:10px;">
+   <img src="https://github.com/user-attachments/assets/404f6c4e-254b-4de6-a808-268710100f98" width="200" style="border:2px solid #ddd; border-radius:10px;">
 </p>
 
 Penjelasan:
@@ -38,7 +38,7 @@ Website ini terdiri dari beberapa section utama:
 ### 1️⃣ Navbar
 Navbar berada di bagian paling atas dan bersifat fixed sehingga letaknya akan tetap di atas saat halaman di-scroll.
 
-<img width="1899" height="67" alt="image" src="https://github.com/user-attachments/assets/941ecf13-0b58-44a1-8f1f-4a312d2f05d2" />
+<img width="1899" height="67" alt="Screenshot 2026-02-28 213912" src="https://github.com/user-attachments/assets/efa228e0-6455-4555-a635-b271620d780b" /><br>
 
 Berisi:
 - Nama pemilik portfolio
@@ -52,7 +52,7 @@ Navbar akan menjadi hamburger menu (3 garis) pada saat dibuka dengan tampilan la
 ### 2️⃣ Hero Section
 Menampilkan section pertama kali muncul saat website dibuka.
 
-<img width="1919" height="1018" alt="image" src="https://github.com/user-attachments/assets/4b2ea20e-d859-4990-8cec-da1056c727a8" /><br>
+<img width="1919" height="1018" alt="Screenshot 2026-02-28 212149" src="https://github.com/user-attachments/assets/963c80ed-a9a2-4579-b0f7-1143212f72df" /><br>
 
 Berisi:
 - Judul “Welcome To My Portfolio”
@@ -63,7 +63,7 @@ Berisi:
 ### 3️⃣ About Us Section
 Menampilkan data diri saya dalam bentuk beberapa kolom.
 
-<img width="1903" height="856" alt="image" src="https://github.com/user-attachments/assets/53a14efc-331b-4ae0-8269-45ff53f7d52d" /><br>
+<img width="1919" height="1018" alt="Screenshot 2026-02-28 212117" src="https://github.com/user-attachments/assets/09a155e6-c9f1-4447-af94-eb56da14593c" /><br>
 
 Berisi:
 - Sisi Kiri:
@@ -81,11 +81,13 @@ Section ini terdiri dari dua bagian:
 
 ***Recent Projects***
 
-<img width="1915" height="1019" alt="image" src="https://github.com/user-attachments/assets/99688530-8ecb-4a4c-a014-0a28a90a2f46" /><br>
+<img width="1915" height="1019" alt="Screenshot 2026-02-28 212726" src="https://github.com/user-attachments/assets/32018a9b-4224-4b7d-b384-c11d8a2b0624" />
+<br>
   
 ***Certificates***
 
-<img width="1917" height="1023" alt="image" src="https://github.com/user-attachments/assets/d38481ca-2ce6-4650-94b3-a9cc33e00fee" /><br>
+<img width="1917" height="1023" alt="Screenshot 2026-02-28 212657" src="https://github.com/user-attachments/assets/2416404e-ac25-487b-a05b-8316298b097a" />
+<br>
 
 Ditampilkan dalam bentuk card grid (3 kolom pada layar besar).
 
@@ -98,7 +100,8 @@ Setiap card berisi:
 
 Footer sederhana di bagian bawah halaman dengan warna gradient hijau dan teks copyright.
 
-<img width="1899" height="82" alt="image" src="https://github.com/user-attachments/assets/3bc1ea11-66a0-40ef-85ce-8d1283077e22" />
+<img width="1899" height="82" alt="Screenshot 2026-02-28 221956" src="https://github.com/user-attachments/assets/3157c900-0aa4-49a8-8165-dad6bd3aa63c" />
+
 
 
 ## 📌 Penjelasan Kode Setiap Section
