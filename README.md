@@ -9,7 +9,7 @@ Nama   : Aliyah Azzah Sekedang
 NIM    : 2409116021
 
 ## 📌 Deskripsi Program
-Website portfolio pribadi ini adalah website statis yang dirancang sebagai personal branding platform. Website ini menampilkan informasi mengenai profil, professional skills, pengalaman, project, dan sertifikat yang pernah diperoleh dalam satu halaman yang modern dan responsif. 
+Website portfolio pribadi ini adalah website yang dirancang sebagai personal branding platform. Website ini menampilkan informasi mengenai profil, professional skills, pengalaman, project, dan sertifikat yang pernah diperoleh dalam satu halaman yang modern dan responsif. 
 
 ## 📌 Teknologi yang Digunakan
 Website ini dibuat menggunakan beberapa teknologi berikut:
