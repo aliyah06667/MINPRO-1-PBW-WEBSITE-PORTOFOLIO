@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seki Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- VUE APP CONTAINER -->
+<div id="app">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="#">{{ name }}</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house-fill"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person-fill"></i> About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates"><i class="bi bi-award-fill"></i> Certificates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="container d-flex justify-content-center">
+    <div class="hero-card text-center">
+      <h1 class="hero-title">
+        Welcome To<br>My Portfolio
+      </h1>
+      <p class="hero-tagline">{{ role }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+<div class="container">
+<div class="row g-5">
+
+  <div class="col-lg-5">
+    <img :src="profileImage" class="identity-card mb-4">
+
+    <div class="about-box">
+      <h3 class="section-title">About Me</h3>
+      <p>{{ description }}</p>
+
+      <h5 class="section-title">Contacts</h5>
+      <p>Email : {{ email }}</p>
+    </div>
+  </div>
+
+  <div class="col-lg-7">
+
+    <!-- SKILLS -->
+    <div class="skills-box">
+      <h3 class="section-title">Professional Skills</h3>
+
+      <div class="mb-3" v-for="skill in skills" :key="skill.name">
+        <span>{{ skill.name }}</span>
+        <div class="progress">
+          <div class="progress-bar"
+               :style="{ width: skill.level + '%' }">
+            {{ skill.level }}%
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="experience-box mt-4">
+      <h3 class="section-title">Experience</h3>
+      <ul class="experience-list">
+        <li v-for="exp in experiences" :key="exp">
+          {{ exp }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="cert-section">
+<div class="container text-center">
+
+<div class="title-wrapper">
+  <h2 class="section-label">Recent Projects</h2>
+</div>
+
+<div class="row g-4 mb-5">
+
+<div class="col-md-4" v-for="project in projects" :key="project.title">
+  <div class="cert-card">
+    <img :src="project.image" class="cert-img">
+    <h6>{{ project.title }}</h6>
+    <a :href="project.image" target="_blank" class="btn custom-btn">
+      View Details
+    </a>
+  </div>
+</div>
+
+</div>
+
+<div class="title-wrapper">
+  <h2 class="section-label">Certificates</h2>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4" v-for="cert in certificates" :key="cert.title">
+  <div class="cert-card">
+    <img :src="cert.image" class="cert-img">
+    <h6>{{ cert.title }}</h6>
+    <a :href="cert.image" target="_blank" class="btn custom-btn">
+      View Details
+    </a>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer class="text-center py-4 footer"> 
+  © 2026 SKIDDOS
+</footer>
+
+</div>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- VUE JS -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+const { createApp } = Vue
+
+createApp({
+  data() {
+    return {
+      name: "Aliyah Azzah Sekedang",
+      role: "Graphic Designer",
+      email: "aliyahazsss@gmail.com",
+      profileImage: "assets/idcard.png",
+      description: "I'm an Information System student passionate about web development and creative design. I enjoy building aesthetic and functional digital experiences.",
+
+      skills: [
+        { name: "HTML & CSS", level: 90 },
+        { name: "UI/UX Design", level: 85 },
+        { name: "Graphic Design", level: 80 }
+      ],
+
+      experiences: [
+        "2024 — Learn About Programming",
+        "2024 — Programming Foundations (Self Learning & Mini Projects)",
+        "2025 — Programming Experience (GitHub, Figma, VS Code)",
+        "2025 — Capstone Project Developer (Database x OOP Website)",
+        "2026 — HTML, CSS, Dart Development",
+        "Organizational — Bendahara Umum OSIS SMAN 3 Samarinda"
+      ],
+
+      projects: [
+        { title: "Infografis - Bekantan", image: "assets/pro1.png" },
+        { title: "FOR YOU - Quiz INFORSA", image: "assets/pro2.png" },
+        { title: "Header README Github Project", image: "assets/pro3.png" },
+        { title: "Green Samarinda - Capstone Project", image: "assets/pro4.png" },
+        { title: "5 Freedoms of Animal Welfare - Poster", image: "assets/pro5.png" },
+        { title: "Webinar - Poster UPSYSTEM", image: "assets/pro6.png" }
+      ],
+
+      certificates: [
+        { title: "SekDep COMINFO - INFORSA", image: "assets/cert1.png" },
+        { title: "Bendahara - INSEVENT 2025", image: "assets/cert2.png" },
+        { title: "Anggota Divisi Acara - APLIKASI 2025", image: "assets/cert3.png" },
+        { title: "Panitia Sayembara Logo - SISFOR UNMUL", image: "assets/cert4.png" },
+        { title: "SekBen - PUBLIC DIGITAL INFORSA", image: "assets/cert5.png" },
+        { title: "Anggota Divisi PDD - TAROT", image: "assets/cert6.png" }
+      ]
+    }
+  }
+}).mount('#app')
+</script>
+
+</body>
+</html>
